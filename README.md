@@ -4,7 +4,7 @@ Dépendance : OpenCV 3.2
 
 Utilisation : 
 - Segmentation des planches :
-- 
+
 Ajouter les images des piles de planches à segmenter dans le dossier “PilePlanches”.
 
 Lancer l’application.
@@ -20,7 +20,7 @@ Les résultats seront affichés dans la fenêtre “Res hough”.
 Chacune des régions trouvées dans l'image seront exportées au format png dans le dossier “planches” et nommées pX.png avec X un nombre donné à la région dans l'ordre de lecture.
 
 - Reconstitution d’un billon : 
-- 
+
 Ajouter les images du billon à reconstituer dans le dossier “Billons”.
 
 Lancer l’application.
