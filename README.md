@@ -1,5 +1,7 @@
 # Segmentation-planche-et-Reconstruction-Billon
 
+Dépendance : OpenCV 3.2
+
 Utilisation : 
 - Segmentation des planches :
 Ajouter les images des piles de planches à segmenter dans le dossier “PilePlanches”.
