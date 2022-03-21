@@ -209,7 +209,7 @@ int main()
 			// Truc un peu magique 
 			// On fait une fermeture sur canny avec un gros filtre 
 			// On extrait les bord de la fermeture avec une egalite entre la dilatation des deux composante par un filtre 5x5 
-			// On floute fortement ce qui n'est pas un bord puis on remet les bords non flouté dans l'image
+			// On floute fortement ce qui n'est pas un bord puis on remet les bords non floutÃ© dans l'image
 			// On detecte a nouveau les bord avec Canny 
 
 			Mat mask, mask1, mask2;
@@ -1436,7 +1436,7 @@ int main()
 			// Truc un peu magique 
 			// On fait une fermeture sur canny avec un gros filtre 
 			// On extrait les bord de la fermeture avec une egalite entre la dilatation des deux composante par un filtre 5x5 
-			// On floute fortement ce qui n'est pas un bord puis on remet les bords non flouté dans l'image
+			// On floute fortement ce qui n'est pas un bord puis on remet les bords non floutÃ© dans l'image
 			// On detecte a nouveau les bord avec Canny 
 
 			Mat mask_canny, mask1, mask2;
@@ -1615,7 +1615,7 @@ int main()
 						}
 					}
 
-					// On calcul al difference entre les deux images pour voir le nombre de pixels superposé sur la grille 
+					// On calcul al difference entre les deux images pour voir le nombre de pixels superposÃ© sur la grille 
 					Mat dif = grille - image_regions_filtered;
 					int nbdif = countNonZero(dif);
 
@@ -2105,7 +2105,7 @@ int main()
 
 
 		}
-		// Passage de l'autre coté 
+		// Passage de l'autre cotÃ© 
 		if (key == 'b') {
 			src = imread(images_color[current_image]);
 			cvtColor(src, src, COLOR_BGR2GRAY);
@@ -2156,7 +2156,7 @@ int main()
 			// Truc un peu magique 
 			// On fait une fermeture sur canny avec un gros filtre 
 			// On extrait les bord de la fermeture avec une egalite entre la dilatation des deux composante par un filtre 5x5 
-			// On floute fortement ce qui n'est pas un bord puis on remet les bords non flouté dans l'image
+			// On floute fortement ce qui n'est pas un bord puis on remet les bords non floutÃ© dans l'image
 			// On detecte a nouveau les bord avec Canny 
 
 			Mat mask, mask1, mask2;
@@ -2234,7 +2234,7 @@ int main()
 			// On dessine le coins de la pilme de planche 
 			//circle(drawing, Point(bestx,besty), 20, Scalar(255, 0, 0), -1);
 
-			// On dessine les rectangle du coté nombre retourné 
+			// On dessine les rectangle du cotÃ© nombre retournÃ© 
 			//1
 			//vector<Point> box_numbers = { Point(198, 39),Point(127, 230),Point(130, 396),Point(180, 568),Point(129, 737),Point(109, 910),Point(171, 1073),Point(162, 1247),Point(115, 1411),Point(119, 1574),Point(152, 1735),Point(131, 1873),Point(552, 2),Point(513, 227),Point(506, 393),Point(534, 568),Point(595, 733),Point(498, 904),Point(525, 1028),Point(516, 1235),Point(507, 1406),Point(495, 1567),Point(506, 1737),Point(906, 29),Point(967, 227),Point(878, 398),Point(892, 567),Point(949, 732),Point(871, 894),Point(878, 1063),Point(902, 1190),Point(861, 1402),Point(908, 1561),Point(860, 1734),Point(1260, 98),Point(1321, 231),Point(1255, 395),Point(1289, 564),Point(1303, 703),Point(1257, 897),Point(1292, 1063),Point(1256, 1206),Point(1294, 1356),Point(1266, 1558),Point(1302, 1718),Point(1206, 1901),Point(1620, 76),Point(1675, 228),Point(1621, 400),Point(1643, 567),Point(1657, 730),Point(1623, 872),Point(1646, 1056),Point(1657, 1217),Point(1648, 1392),Point(1626, 1541),Point(1656, 1709),Point(1590, 1854),Point(2029, 231),Point(1989, 400),Point(1997, 566),Point(2011, 734),Point(2024, 928),Point(2000, 1058),Point(2001, 1200),Point(1995, 1382),Point(1979, 1527),Point(2010, 1705),Point(1962, 1887),Point(1971, 2258),Point(2365, 401),Point(2380, 572),Point(2365, 699),Point(2378, 889),Point(2354, 1056),Point(2355, 1218),Point(2349, 1345),Point(2355, 1526),Point(2364, 1704),Point(2315, 1892) };
 			//4
@@ -2319,7 +2319,7 @@ int main()
 			// Truc un peu magique 
 			// On fait une fermeture sur canny avec un gros filtre 
 			// On extrait les bord de la fermeture avec une egalite entre la dilatation des deux composante par un filtre 5x5 
-			// On floute fortement ce qui n'est pas un bord puis on remet les bords non flouté dans l'image
+			// On floute fortement ce qui n'est pas un bord puis on remet les bords non floutÃ© dans l'image
 			// On detecte a nouveau les bord avec Canny 
 
 			Mat mask, mask1, mask2;
@@ -2513,7 +2513,7 @@ int main()
 			time(&end);
 			cout << "Temps : " << double(end - start) << "s" << endl;
 		}
-		// Transformée de fourrier 
+		// TransformÃ©e de fourrier 
 		if (key == 'f') {
 
 			//src = imread("Paquet 3/planks-color/plank-color-1/Arbre 5/p" + to_string(9) + ".png");
@@ -3197,11 +3197,11 @@ int main()
 			// ---------------------------------- Initialisation des parametres ---------------------------------- //
 
 			// Recuperation du billon 
-			string billon_name = "A05a";
+			string billon_name = "A05a.jpeg";
 			cout << "Billon a traiter : ";
 			cin >> billon_name;
 			Mat billon;
-			billon = imread("Billons/" + billon_name + ".jpeg");
+			billon = imread("Billons/" + billon_name);
 			namedWindow("la source pour le screen", WINDOW_NORMAL);
 			imshow("la source pour le screen", billon);
 
@@ -3934,8 +3934,8 @@ int main()
 			cout << "Score final : " << final_score << endl;
 
 
-			namedWindow("juste pour voir le resultat final", WINDOW_NORMAL);
-			imshow("juste pour voir le resultat final", img_display);
+			namedWindow("Resultat recontitution", WINDOW_NORMAL);
+			imshow("Resultat recontitution", img_display);
 			// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 			/*
 			Mat masked_billon,mask_for_maskedbillon;
